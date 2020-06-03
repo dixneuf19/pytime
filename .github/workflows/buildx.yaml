@@ -33,7 +33,7 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
-            -t padok/pytime:${GITHUB_SHA::7}
+            -t dixneuf19/pytime:${GITHUB_SHA::7}
             .
             
       - name: Login to DockerHub
@@ -44,7 +44,7 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
-            -t padok/pytime:${GITHUB_SHA::7}
+            -t dixneuf19/pytime:${GITHUB_SHA::7}
             .
             --push
             
